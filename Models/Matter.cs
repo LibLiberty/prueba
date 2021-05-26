@@ -11,7 +11,7 @@ namespace WonderMath.API.Models
         public int IdClassroom { get; set; }
         public string Topic { get; set; }
         public virtual ICollection<Teach> Teach { get; set; }
-
         public int Notes { get; set; } 
+        public string Name {get; set}
     }
 }
