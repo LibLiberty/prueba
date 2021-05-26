@@ -11,5 +11,6 @@ namespace WonderMath.API.Models
         public string LastName { get; set; }
         public string Course { get; set; }
         public string SecondLastName { get; set; }
+        public int Cellphone { get; set; }
     }
 }
