@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using prueba.Data;
+using prueba.Repository;
+using prueba.Repository.Interfaces;
 
 namespace prueba
 {
@@ -19,11 +21,13 @@ namespace prueba
         {
             Configuration = configuration;
         }
+        
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IProfessorRepository, ProfessorRepository>();
             // Conexion with Sql Server 
             services.AddDbContext<DataContext>(x =>
             {
