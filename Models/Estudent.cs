@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-namespace WonderMath.API.Models
+namespace prueba.Models
 {
     public class Estudent
     {

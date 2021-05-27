@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-namespace WonderMath.API.Models
+namespace prueba.Models
 {
     public class Matter
     {
@@ -12,6 +12,6 @@ namespace WonderMath.API.Models
         public string Topic { get; set; }
         public virtual ICollection<Teach> Teach { get; set; }
         public int Notes { get; set; } 
-        public string Name {get; set}
+        public string Name {get; set; }
     }
 }
